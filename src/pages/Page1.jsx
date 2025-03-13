@@ -20,15 +20,15 @@ const  resumeBtnHandle = (url ) => {
 
 }
 
-const tildRef = useRef(null)
+// const tildRef = useRef(null)
 
-const mouseMoveHandler = (e) => {
-  console.log(e.clientX)
-  console.log(tildRef.current.getBoundingClientRect())
-}
+// const mouseMoveHandler = (e) => {
+//   console.log(e.clientX)
+//   console.log(tildRef.current.getBoundingClientRect())
+// }
 
   return (
-    <div onMouseMove={(e)=> {mouseMoveHandler(e)}} className=" w-full  relative rounded-xl shadow-lg overflow-hidden p-4 ">
+    <div onMouseMove={(e)=> {mouseMoveHandler(e)}} className=" w-full  rounded-xl shadow-lg overflow-hidden p-4 ">
   
       <img
         src={Mypic}
@@ -39,11 +39,10 @@ const mouseMoveHandler = (e) => {
         src={mypic2}
         className="h-full w-full rounded-2xl object-cover block md:hidden"
       />
-      <div  ref={tildRef} className="md:absolute relative page1-in top-[50%] left-20">
-        <div id="tilt_Div w-full">
+      <div   className="md:absolute  page1-in top-[50%] left-20">
+        
         <Tildtext />
-        </div>
-    
+     
       <div className="md:flex">
       <button onClick={() => resumeBtnHandle(pdf_url )} className='px-6 py-2 md:px-6 md:py-2  md:block  bg-sky-800 text-zinc-100 rounded-full mr-3 mt-4  text-xl '>Resume</button>
       <a href={profile_url} target="_blank"><button className='px-6 py-2 md:px-6 md:py-2  md:block  bg-black text-zinc-100 rounded-full mt-4 text-xl '>Connect</button></a>
