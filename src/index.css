@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: font1;
+    src: url(./assets/file.woff2);
+}
+
+@font-face {
+    font-family: font12;
+    src: url(./assets/file\ \(1\).woff2);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(./assets/file\ \(2\).woff2);
+}
+
+.page1-in{
+    position: relative;
+    perspective: 1000px;
+
+}
+#tilt_Div{
+    background-color: red;
+    width: fit-content;
+    transform: rotateX(40deg);
+} 
+
