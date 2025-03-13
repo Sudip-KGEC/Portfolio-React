@@ -9,16 +9,16 @@ const profile_url = 'http://www.linkedin.com/in/sudip-ruidas-165b212b7'
 
 function Page1() {
 
-const  resumeBtnHandle = (url ) => {
-  const fileName = url.split("/").pop();
-  const aTag = document.createElement("a");
-  aTag.href = url ; 
-  aTag.setAttribute("Download" , fileName) ;
-  document.body.appendChild(aTag);
-  aTag.click();
-  aTag.remove();
+// const  resumeBtnHandle = (url ) => {
+//   const fileName = url.split("/").pop();
+//   const aTag = document.createElement("a");
+//   aTag.href = url ; 
+//   aTag.setAttribute("Download" , fileName) ;
+//   document.body.appendChild(aTag);
+//   aTag.click();
+//   aTag.remove();
 
-}
+// }
 
 // const tildRef = useRef(null)
 
@@ -44,8 +44,12 @@ const  resumeBtnHandle = (url ) => {
         <Tildtext />
      
       <div className="md:flex">
-      <button onClick={() => resumeBtnHandle(pdf_url )} className='px-6 py-2 md:px-6 md:py-2  md:block  bg-sky-800 text-zinc-100 rounded-full mr-3 mt-4  text-xl '>Resume</button>
-      <a href={profile_url} target="_blank"><button className='px-6 py-2 md:px-6 md:py-2  md:block  bg-black text-zinc-100 rounded-full mt-4 text-xl '>Connect</button></a>
+      <a href= "https://drive.google.com/file/d/1eqzB_dnQUXDwDxTOpV0tKbpin7EXXKFY/view?usp=drive_link" target="_blank">
+       <button className='px-6 py-2 md:px-6 md:py-2  md:block  bg-sky-800 text-zinc-100 rounded-full mr-3 mt-4  text-xl '>Resume</button>
+      </a>
+      <a href={profile_url} target="_blank">
+        <button className='px-6 py-2 md:px-6 md:py-2  md:block  bg-black text-zinc-100 rounded-full mt-4 text-xl '>Connect</button>
+      </a>
 
       </div>
       
